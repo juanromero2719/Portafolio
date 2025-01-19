@@ -4,7 +4,7 @@ import Profile from './components/profile'
 
 export default function About(){
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col h-screen">
         
         <Profile />
 
