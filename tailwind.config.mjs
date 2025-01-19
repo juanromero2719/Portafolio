@@ -3,6 +3,11 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+
+      fontFamily: {
+        Acorn: ['Acorn', 'sans-serif'],
+      },
+
       backgroundImage: {
         'gradient-animated': 'linear-gradient(270deg, #FFCDD2, #C8E6C9, #FFF9C4)', // Rojo pastel, verde pastel, azul pastel, amarillo pastel
       },
