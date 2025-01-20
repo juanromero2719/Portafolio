@@ -1,34 +1,79 @@
-// componentes
+"use client";
 
-import Title from './components/title';
-import ProjectsGrid from './components/proyectos';
-import Subtitle from './components/subtitle';
+// Librerías
+import { motion } from "framer-motion";
 
-// hooks
+// Componentes
+import Title from "./components/title";
+import ProjectsGrid from "./components/proyectos";
+import Subtitle from "./components/subtitle";
 
-import { useProjects } from './hooks/useProjects';
-import { useWorkingProjects } from './hooks/useWorkingProjects';
+// Hooks
+import { useProjects } from "./hooks/useProjects";
+import { useWorkingProjects } from "./hooks/useWorkingProjects";
 
 export default function Page() {
-
   const { projects } = useProjects();
   const { workingProjects } = useWorkingProjects();
 
-  return (
-    <div className="flex flex-col items-center min-h-screen border-blue-900 ">
+  // Variantes de animación
+  const containerVariants = {
+    hidden: { opacity: 0, y: -30 }, // Aparece desde arriba
+    visible: (custom) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: custom * 0.3, // Retraso incremental
+        duration: 0.6, // Duración de la animación
+      },
+    }),
+  };
 
+  return (
+    <div className="flex flex-col items-center min-h-screen border-blue-900 space-y-10">
       {/* Título */}
-      <Title />
+      <motion.div
+        custom={0} // Índice del componente
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+        className="w-full"
+      >
+        <Title />
+      </motion.div>
 
       {/* Grid de proyectos */}
-      <ProjectsGrid projects={projects} />
+      <motion.div
+        custom={1} // Índice del componente
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+        className="w-full"
+      >
+        <ProjectsGrid projects={projects} />
+      </motion.div>
 
       {/* Subtítulo */}
-      <Subtitle />
+      <motion.div
+        custom={2} // Índice del componente
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+        className="w-full"
+      >
+        <Subtitle />
+      </motion.div>
 
-       {/* Grid de proyectos */}
-       <ProjectsGrid projects={workingProjects}  />
-
-    </div> 
+      {/* Grid de proyectos adicionales */}
+      <motion.div
+        custom={3} // Índice del componente
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+        className="w-full"
+      >
+        <ProjectsGrid projects={workingProjects} />
+      </motion.div>
+    </div>
   );
 }

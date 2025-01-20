@@ -8,7 +8,7 @@ export default function Collaborate() {
   
         {/* Texto descriptivo */}
         <p className="text-base leading-relaxed text-[#025A4E] font-AcornRegular text-left font-RegularAcorn">
-        El conocimiento no solo abre puertas al conocimiento, sino que también te da las herramientas para construir tu propio camino, superar obstáculos y contribuir de manera significativa a la sociedad. La educación no se trata solo de adquirir información, sino de aprender a cuestionar, desarrollar un pensamiento crítico y ser capaz de tomar decisiones.
+        La educación no solo abre puertas al conocimiento, sino que también te da las herramientas para construir tu propio camino, superar obstáculos y contribuir de manera significativa a la sociedad. La educación no se trata solo de adquirir información, sino de aprender a cuestionar, desarrollar un pensamiento crítico y ser capaz de tomar decisiones.
         </p>
       </div>
     );

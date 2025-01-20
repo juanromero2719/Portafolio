@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
 
+      colors: {
+        translucentWhite: 'hsla(0, 0%, 100%, 0.3)', // Define el color
+      },
+
       fontFamily: {
         Acorn: ['Acorn', 'sans-serif'],
         LightAcorn: ['Acorn-Light', 'sans-serif'],
