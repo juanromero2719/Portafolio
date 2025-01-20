@@ -10,6 +10,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Acorn-Light';
+  src: url('/fonts/LightAcorn.ttf') format('ttf'),
+        url('/fonts/LightAcorn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acorn-Regular';
+  src: url('/fonts/RegularAcorn.ttf') format('ttf'),
+        url('/fonts/RegularAcorn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 :root {
   --background: #ffffff;

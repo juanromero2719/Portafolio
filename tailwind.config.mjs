@@ -6,6 +6,8 @@ module.exports = {
 
       fontFamily: {
         Acorn: ['Acorn', 'sans-serif'],
+        LightAcorn: ['Acorn-Light', 'sans-serif'],
+        RegularAcorn: ['Acorn-Regular', 'sans-serif'],
       },
 
       backgroundImage: {
