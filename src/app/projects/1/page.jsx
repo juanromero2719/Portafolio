@@ -2,8 +2,8 @@
 import Title from "./components/title";
 import Details from "./components/details";
 import ImageCard from './components/imageCard';
-import OverviewCard from "./components/OverviewCard";
-import InfoCard from "./components/InfoCard";
+import OverviewCard from "./components/overviewCard";
+import InfoCard from "./components/infoCard";
 
 // hooks
 import { useTitle } from "./hooks/useTitle";

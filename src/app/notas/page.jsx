@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 // Componentes
 import TitleAndDescription from "./components/title";
-import Notes from "./components/Notes";
+import Notes from "./components/notes";
 
 // Hooks
 import { useTitleAndDescription } from "./hooks/useTitle";
