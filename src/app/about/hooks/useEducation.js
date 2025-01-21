@@ -18,6 +18,7 @@ export const useSteps = () => {
         description:
           "Especialización en Software. (2024~)",
       },
+
     ];
     
     return { steps };

@@ -1,6 +1,6 @@
 export default function Experience({ experiences }) {
     return (
-      <div className="bg-transparent p-6 max-w-screen-sm mx-auto w-[100%] ">
+      <div className="bg-transparent px-6 max-w-screen-sm mx-auto w-[100%] ">
         
         <div className="space-y-4 ">
           {experiences.map((exp) => (
