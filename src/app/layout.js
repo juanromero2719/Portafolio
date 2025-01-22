@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Componentes
 import ChatBot from "./contact/components/chatbot";
@@ -12,30 +13,41 @@ export default function RootLayout({ children }) {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const handleContactClick = () => {
-    console.log("Step 1: handleContactClick ejecutado."); // Paso 1
     setIsChatOpen(true);
-    console.log("Step 2: isChatOpen actualizado a:", true); // Paso 2
   };
 
   const handleChatClose = () => {
-    console.log("Step 3: handleChatClose ejecutado."); // Paso 3
     setIsChatOpen(false);
-    console.log("Step 4: isChatOpen actualizado a:", false); // Paso 4
   };
 
   return (
     <html lang="en">
       <body className="min-h-screen bg-gradient-animated bg-[length:400%_400%] animate-gradient-move">
-        <NavBar onContactClick={handleContactClick} /> {/* Paso 5 */}
+        <NavBar onContactClick={handleContactClick} />
         <main className="flex-grow">{children}</main>
 
-        {/* Si isChatOpen es true, renderizamos el ChatBot */}
-        {isChatOpen && (
-          <>
-            <ChatBot isOpen={isChatOpen} onClose={handleChatClose} />
-            {console.log("Step 6: ChatBot renderizado.")}
-          </>
-        )}
+        {/* Animación de entrada/salida del chatbot */}
+        <AnimatePresence>
+          {isChatOpen && (
+            <motion.div
+              className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <motion.div
+                className="w-full h-full max-h-screen md:max-w-md md:h-auto md:rounded-lg shadow-lg"
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "100%" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+              >
+                <ChatBot isOpen={isChatOpen} onClose={handleChatClose} />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         <Footer />
       </body>
