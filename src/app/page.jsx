@@ -31,6 +31,7 @@ export default function Page() {
 
   return (
     <div className="flex flex-col items-center min-h-screen border-blue-900 space-y-10">
+      
       {/* Título */}
       <motion.div
         custom={0} // Índice del componente

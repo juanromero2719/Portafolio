@@ -26,6 +26,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gt';
+  src: url('/fonts/gt.ttf') format('ttf'),
+        url('/fonts/gtttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(100%);

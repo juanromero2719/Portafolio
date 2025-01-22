@@ -12,6 +12,7 @@ module.exports = {
         Acorn: ['Acorn', 'sans-serif'],
         LightAcorn: ['Acorn-Light', 'sans-serif'],
         RegularAcorn: ['Acorn-Regular', 'sans-serif'],
+        Gt: ['GT', 'sans-serif'],
       },
 
       backgroundImage: {
