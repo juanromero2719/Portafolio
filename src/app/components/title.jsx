@@ -4,10 +4,10 @@ export default function Title() {
   return (
 
     <>
-      <header className="flex flex-row justify-center items-stretch h-36 mt-[1vh]
+      <header className="flex flex-row justify-center items-stretch h-36 my-[1vh]
         sm:mt-[5vh]
         md:mx-14 md:gap-6 md:mt-[10vh]
-        lg:mt-[15vh] lg:h-52
+        lg:mt-[15vh] lg:h-52S
         2xl:mt-[20vh]
       ">
       
@@ -56,7 +56,7 @@ export default function Title() {
             sm:px-[7%] sm:mt-[4%] sm:text-base
             md:text-base
             lg:text-lg
-            xl:text-xl
+            xl:text-xl mb-[1vh]
             2xl:text-2xl
       ">
               Diseñador y arquitecto de soluciones de software, 
