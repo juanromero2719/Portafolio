@@ -15,18 +15,19 @@ export default function Footer() {
         
       <footer className="bg-transparent py-10 my-10 px-6 w-[80%] mx-auto">
 
-        <div className="flex flex-row justify-between items-start space-y-0 md:space-x-12">
+        <div className="flex flex-row space-x-[20vw] items-start space-y-0">
+          
           {/* Elsewhere Section */}
           <div>
-            <h3 className="text-lg font-semibold text-[#025A4E] mb-4 font-Acorn">Redes Sociales</h3>
+            <h3 className="text-lg font-semibold text-[#025A4E] mb-4 font-Acorn">Redes</h3>
             <ul className="space-y-2">
               {elsewhereLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    target={link.name === 'CV' ? '_self' : '_blank'} // Evita abrir una nueva pestaña para CV
+                    target={link.name === 'CV' ? '_self' : '_blank'}
                     rel={link.name === 'CV' ? undefined : 'noopener noreferrer'}
-                    download={link.name === 'CV' ? true : undefined} // Forzar descarga para el archivo CV
+                    download={link.name === 'CV' ? true : undefined} 
                     className="text-sm text-[#126358] hover:text-[#025A4E] transition"
                   >
                     {link.name}
@@ -52,6 +53,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
         </div>
       </footer>
     );

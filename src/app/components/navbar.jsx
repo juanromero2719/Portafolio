@@ -18,7 +18,7 @@ export default function Navbar({ onContactClick }) {
 
   return (
 
-    <nav className="flex justify-center items-center space-x-1 bg-transparent py-4 rounded-lg  relative mt-[20px]
+    <nav className="flex justify-center items-center space-x-1 bg-transparent mt-10 rounded-lg  relative 
       sm:space-x-4
       md:space-x-5
       lg:space-x-6
