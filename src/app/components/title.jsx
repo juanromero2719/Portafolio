@@ -4,61 +4,51 @@ export default function Title() {
   return (
 
     <>
-      <header className="flex flex-row justify-center items-stretch h-36 my-[1vh]
-        sm:mt-[5vh]
-        md:mx-14 md:gap-6 md:mt-[10vh]
-        lg:mt-[15vh] lg:h-52S
-        2xl:mt-[20vh]
+      <header className="flex flex-row justify-center items-stretch h-auto my-[5vh]
+        md:mx-14 md:gap-6 
+        xl:mt-[10vh]
       ">
       
-        {/* Contenedor de la estrella superior */}
-        <aside className="flex flex-col justify-end w-auto">
-          <Image
-            src="/images/star.svg"
-            alt="Estrella superior"
-            width={50}
-            height={50}
-            className="w-7 h-10
-              md:w-14 md:h-14
-              lg:w-20 lg:h-20"
-          />
-        </aside>
-
-        {/* Títulos */}
-        <h1
-          className="font-Acorn text-center leading-tight tracking-[-2px] flex flex-col justify-center
-                    text-4xl text-[#025A4E]
-                    sm:text-5xl
-                    lg:text-7xl
-                    2xl:text-8xl"
-        >
-          Hola. Soy Sebastián R.
-          <br />
-          Ing. en Software.
-        </h1>
-
-        {/* Contenedor de la estrella inferior */}
-        <aside className="flex flex-col justify-start w-auto">
+        {/* Contenedor de la estrella izquierda */}
+        <aside className="flex flex-col justify-end w-auto h-[30vw] max-h-[300px]
+        md:h-[30vw]">
           <Image
             src="/images/star.svg"
             alt="Estrella inferior"
-            width={50}
-            height={50}
-            className="w-7 h-10 
-              md:w-14 md:h-14
-              lg:w-20 lg:h-20"
+            width={33}
+            height={33}
+            className="md:w-[66px] h-auto"
+          />
+        </aside>
+
+        <h1
+          className="ml-5 font-Acorn text-center leading-[1.1] tracking-[-2px] flex flex-col justify-center text-[#025A4E]"
+          style={{ fontSize: "clamp(50px, 10.3vw, 150px)" }}
+        >
+          <span>Sebastián R.</span>
+          <span>Ing. Software.</span>
+        </h1>
+
+
+        {/* Contenedor de la estrella derecha */}
+        <aside className="flex flex-col justify-start w-auto h-[30vw] max-h-[300px]
+        md:h-[30vw]">
+          <Image
+            src="/images/star.svg"
+            alt="Estrella inferior"
+            width={33}
+            height={33}
+            className="md:w-[66px] h-auto"
           />
         </aside>
 
       </header>
 
-      <h4 className="font-Acorn text-center text-sm text-[#025A4E] 
-            sm:px-[7%] sm:mt-[4%] sm:text-base
-            md:text-base
-            lg:text-lg
-            xl:text-xl mb-[1vh]
-            2xl:text-2xl
-      ">
+      <h4
+        className="font-ThinAcorn font-bold text-center text-[#546d69] mx-[5vw] my-[2vh] 
+        sm:mt-[4%]"
+        style={{ fontSize: "clamp(16px, 3vw, 25px)" }}
+      >
               Diseñador y arquitecto de soluciones de software, 
               programador back-end y front-end.
       </h4> 

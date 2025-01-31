@@ -8,7 +8,7 @@ export default function Navbar({ onContactClick }) {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Inicio", href: "/" },
+    { name: "Work", href: "/" },
     { name: "Biografía", href: "/about" },
     { name: "Notas", href: "/notas" },
     { name: "Contacto", href: "/contact" },
@@ -18,7 +18,7 @@ export default function Navbar({ onContactClick }) {
 
   return (
 
-    <nav className="flex justify-center items-center space-x-1 bg-transparent py-7 rounded-lg  relative
+    <nav className="flex justify-center items-center space-x-1 bg-transparent py-4 rounded-lg  relative mt-[20px]
       sm:space-x-4
       md:space-x-5
       lg:space-x-6
@@ -58,8 +58,8 @@ export default function Navbar({ onContactClick }) {
               2xl:text-2xl
               ${
               (item.href === "/" && isInicioActive) || pathname === item.href
-                ? "text-[#025A4E] font-semibold"
-                : "text-gray-600 group-hover:text-[#025A4E]"
+                ? "text-[#546d69] "
+                : "text-[#546d69] group-hover:text-[#025A4E]"
             }`}
           >
             {item.name}

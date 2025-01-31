@@ -27,12 +27,22 @@
 }
 
 @font-face {
-  font-family: 'Gt';
-  src: url('/fonts/gt.ttf') format('ttf'),
-        url('/fonts/gtttf') format('truetype');
+  font-family: 'Acorn-Thin';
+  src: url('/fonts/ThinAcorn.ttf') format('ttf'),
+        url('/fonts/ThinAcorn.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Gt';
+  src: url('/fonts/gt.ttf') format('ttf'),
+        url('/fonts/gt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 @keyframes slideUp {
   from {

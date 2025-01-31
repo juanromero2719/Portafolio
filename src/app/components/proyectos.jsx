@@ -10,7 +10,7 @@ export default function ProjectsGrid({ projects }) {
   };
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 bg-transparent w-[90%] mx-auto mb-10 pb-10">
+    <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 bg-transparent w-[80%] mx-auto mb-10 pb-10">
       {projects.map((project, index) => (
         <div
           key={project.id}
