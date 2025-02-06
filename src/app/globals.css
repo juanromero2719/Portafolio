@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Acorn';
+  src: url('/fonts/SemiBoldAcorn.ttf') format('ttf'),
+        url('/fonts/SemiBoldAcorn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acorn-Light';
+  src: url('/fonts/LightAcorn.ttf') format('ttf'),
+        url('/fonts/LightAcorn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acorn-Regular';
+  src: url('/fonts/RegularAcorn.ttf') format('ttf'),
+        url('/fonts/RegularAcorn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acorn-Thin';
+  src: url('/fonts/ThinAcorn.ttf') format('ttf'),
+        url('/fonts/ThinAcorn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gt';
+  src: url('/fonts/gt.woff') format('woff'),
+        url('/fonts/gt.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
