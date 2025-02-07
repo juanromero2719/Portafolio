@@ -1,6 +1,6 @@
 export const useImage = () => {
     const image = {
-      src: "/images/paisajeMeta.jpg", // Ruta de la imagen
+      src: "/images/remoteDesktop/requerimientos.jpg", // Ruta de la imagen
       alt: "Descripción de la imagen", // Descripción de la imagen
     };
   

@@ -13,8 +13,7 @@ export default function Description() {
 
   
         {/* Descripción */}
-        <p className="text-[#546d69] font-RegularAcorn leading-[160%]
-        "
+        <p className="text-[#546d69] font-RegularAcorn leading-[160%]"
         style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
           Estudiante de especialización. He trabajado en proyectos de software para instituciones educativas desarrollando un papel de programador full stack, trabajando con lenguajes como Python y Java.
           <br />

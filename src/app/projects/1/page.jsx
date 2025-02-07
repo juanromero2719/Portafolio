@@ -9,6 +9,7 @@ import Details from "./components/details";
 import ImageCard from './components/imageCard';
 import OverviewCard from "./components/overviewCard";
 import InfoCard from "./components/infoCard";
+import Carousel from "./components/carousel";
 
 // hooks
 import { useTitle } from "./hooks/useTitle";
@@ -114,7 +115,9 @@ export default function Page() {
         variants={containerVariants}
         className="w-full"
       >
-        <ImageCard src={vista.src} alt={vista.alt} />
+        <div className="p-4">
+          <Carousel />
+        </div>
       </motion.div>
 
       <motion.div
