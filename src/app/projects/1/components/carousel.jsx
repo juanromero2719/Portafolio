@@ -2,11 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useImage } from "../hooks/useCarousel";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function Carousel() {
-  const { images } = useImage();
+export default function Carousel({images}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Cambio automático de imagen cada 5 segundos
@@ -35,6 +33,7 @@ export default function Carousel() {
       lg:h-[30vw]
       2xl:h-[20vw] ">
         <AnimatePresence mode="wait">
+
           <motion.img
             key={images[currentIndex].src}
             src={images[currentIndex].src}
@@ -45,6 +44,7 @@ export default function Carousel() {
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
           />
+
         </AnimatePresence>
       </div>
 

@@ -16,7 +16,7 @@ export default function OverviewCard({ title, text }) {
       {/* Texto opcional */}
       {text && (
         <p
-          className="text-[#4F6462] leading-relaxed font-RegularAcorn"
+          className="text-[#4F6462] leading-relaxed font-Gt"
           style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)", whiteSpace: "pre-line"  }}
         >
           {text}

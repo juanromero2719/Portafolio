@@ -15,16 +15,13 @@ import Carousel from "./components/carousel";
 import { useTitle } from "./hooks/useTitle";
 import { useDetails } from "./hooks/useDetails";
 import { useImage } from "./hooks/useImage";
-import { useVista } from "./hooks/useVista";
 import { useOverview } from "./hooks/useOverview";
 import { useInfoCard } from "./hooks/useInfoCard";
 import { useInfo } from "./hooks/useInfo";
-import { useFabrica } from './hooks/useFabrica';
-import { useMvc } from './hooks/useMvc';
-import { useAlmacenamiento } from './hooks/useAlmacenamiento';
 import { useMonitor } from './hooks/useMonitor';
-import { useObserver } from './hooks/useObserver';
-import { useSecurity } from './hooks/useSecurity';
+import { useCarousel } from './hooks/useCarousel';
+import { useCode } from './hooks/useCode';
+import { useListaImagenesTres } from './hooks/useListaImagenesTres';
 
 export default function Page() {
 
@@ -43,16 +40,13 @@ export default function Page() {
   const { title, subtitle } = useTitle(); // Obtén los datos desde el hook
   const { timeline, team, role } = useDetails();
   const { image } = useImage();
-  const { vista } = useVista();
   const { overviewData } = useOverview();
   const { info } = useInfoCard();
-  const { infoHowToMake } = useInfo();
-  const { Fabrica } = useFabrica();
-  const { Mvc } = useMvc();
-  const { almacenamiento } = useAlmacenamiento();
+  const { useOverviewDos } = useInfo();
   const { monitor } = useMonitor();
-  const { observer } = useObserver();
-  const { security } = useSecurity();
+  const { carousel } = useCarousel();
+  const { imagesCode } = useCode();
+  const { ListaTres } = useListaImagenesTres();
 
 
   return (
@@ -116,7 +110,7 @@ export default function Page() {
         className="w-full"
       >
         <div className="p-4">
-          <Carousel />
+          <Carousel images={carousel} />
         </div>
       </motion.div>
 
@@ -127,9 +121,9 @@ export default function Page() {
         variants={containerVariants}
         className="w-full"
       >
-        <OverviewCard title={infoHowToMake.title} text={infoHowToMake.text} />
+        <OverviewCard title={useOverviewDos.title} text={useOverviewDos.text} />
       </motion.div>
-      
+
       <motion.div
         custom={7} // Índice del componente
         initial="hidden"
@@ -137,29 +131,11 @@ export default function Page() {
         variants={containerVariants}
         className="w-full"
       >
-        <ImageCard src={Fabrica.src} alt={Fabrica.alt} />
-      </motion.div>
-
-      <motion.div
-        custom={8} // Índice del componente
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-        className="w-full"
-      >
-        <ImageCard src={Mvc.src} alt={Mvc.alt} />
+        <div className="p-4">
+          <Carousel images={imagesCode}/>
+        </div>
       </motion.div>
       
-      <motion.div
-        custom={9} // Índice del componente
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-        className="w-full"
-      >
-        <ImageCard src={observer.src} alt={observer.alt} />
-      </motion.div>
-
       <motion.div
         custom={10} // Índice del componente
         initial="hidden"
@@ -169,26 +145,20 @@ export default function Page() {
       >
         <OverviewCard title={monitor.title} text={monitor.text} />
       </motion.div>
-      
+
       <motion.div
-        custom={11} // Índice del componente
+        custom={7} // Índice del componente
         initial="hidden"
         animate="visible"
         variants={containerVariants}
         className="w-full"
       >
-        <ImageCard src={security.src} alt={security.alt} />
+        <div className="p-4">
+          <Carousel images={ListaTres}/>
+        </div>
       </motion.div>
       
-      <motion.div
-        custom={12} // Índice del componente
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-        className="w-full"
-      >
-        <ImageCard src={almacenamiento.src} alt={almacenamiento.alt} />
-      </motion.div>
+      
     </div>
   );
 }

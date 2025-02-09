@@ -1,5 +1,5 @@
-export const useImage = () => {
-    const images = [
+export const useCarousel = () => {
+    const carousel = [
       {
         src: "/images/remoteDesktop/VistaTres.png",
         alt: "Descripción de la imagen 1",
@@ -15,6 +15,6 @@ export const useImage = () => {
 
     ];
   
-    return { images };
+    return { carousel };
   };
   
