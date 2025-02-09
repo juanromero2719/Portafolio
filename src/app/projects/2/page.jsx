@@ -9,6 +9,7 @@ import Details from "../1/components/details";
 import ImageCard from '../1/components/imageCard'
 import OverviewCard from "../1/components/overviewCard";
 import Github from "../1/components/infoCard";
+import Carousel from "../1/components/carousel";
 
 // hooks
 import { useTitle } from "./hooks/useTitle";
@@ -16,6 +17,11 @@ import { useDetails } from "./hooks/useDetails";
 import { useImage } from "./hooks/useImage";
 import { useOverview } from "./hooks/useOverview";
 import { useGithub } from "./hooks/useGithub";
+import { useIntroduction } from "./hooks/useIntroduction";
+import { useSecondOverview } from "./hooks/useSecondOverview";
+import { useCarousel } from "./hooks/useCarousel";	
+import { useSecondCarousel } from "./hooks/useSecondCarousel";
+import { useThirdOverview } from "./hooks/useThirdOverview";
 
 export default function Page() {
 
@@ -37,6 +43,12 @@ export default function Page() {
     const { image } = useImage();
     const { overviewData } = useOverview();
     const { githubInfo } = useGithub();
+    const { introduction } = useIntroduction();
+    const { secondOverview } = useSecondOverview();	
+    const { carousel } = useCarousel();
+    const { secondCarousel } = useSecondCarousel();
+    const { ThirOverview } = useThirdOverview();
+    
 
     return (
 
@@ -73,7 +85,7 @@ export default function Page() {
             </motion.div>
 
             <motion.div
-                custom={3} // Índice del componente
+                custom={3} 
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
@@ -83,13 +95,67 @@ export default function Page() {
             </motion.div>
 
              <motion.div
-                    custom={4} // Índice del componente
+                    custom={4} 
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}
                     className="w-full"
             >
                 <Github text={githubInfo.text} icon={githubInfo.icon} href={githubInfo.href} />
+            </motion.div>
+
+            <motion.div
+                custom={5} 
+                initial="hidden"
+                animate="visible"
+                variants={containerVariants}
+                className="w-full"
+            >
+                <OverviewCard title={introduction.title} text={introduction.text} />
+            </motion.div>
+
+            <motion.div
+                custom={6} // Índice del componente
+                initial="hidden"
+                animate="visible"
+                variants={containerVariants}
+                className="w-full"
+            >
+                <div className="p-4">
+                      <Carousel images={carousel} />
+                </div>
+            </motion.div>
+
+            <motion.div
+                custom={7} 
+                initial="hidden"
+                animate="visible"
+                variants={containerVariants}
+                className="w-full"
+            >
+                <OverviewCard title={secondOverview.title} text={secondOverview.text} />
+            </motion.div>
+
+            <motion.div
+                custom={8} // Índice del componente
+                initial="hidden"
+                animate="visible"
+                variants={containerVariants}
+                className="w-full"
+            >
+                <div className="p-4">
+                      <Carousel images={secondCarousel} />
+                </div>
+            </motion.div>
+
+            <motion.div
+                custom={9} 
+                initial="hidden"
+                animate="visible"
+                variants={containerVariants}
+                className="w-full"
+            >
+                <OverviewCard title={ThirOverview.title} text={ThirOverview.text} />
             </motion.div>
       
         </>
