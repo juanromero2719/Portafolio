@@ -7,12 +7,14 @@ import { motion } from "framer-motion";
 import Title from "./components/title";
 import ProjectsGrid from "./components/proyectos";
 import Subtitle from "./components/subtitle";
+import WorkingProjectsGrid from "./components/proyectosDesarrollo";
 
 // Hooks
 import { useProjects } from "./hooks/useProjects";
 import { useWorkingProjects } from "./hooks/useWorkingProjects";
 
 export default function Page() {
+
   const { projects } = useProjects();
   const { workingProjects } = useWorkingProjects();
 
@@ -34,7 +36,7 @@ export default function Page() {
       
       {/* Título */}
       <motion.div
-        custom={0} // Índice del componente
+        custom={0} 
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -46,7 +48,7 @@ export default function Page() {
 
       {/* Grid de proyectos */}
       <motion.div
-        custom={1} // Índice del componente
+        custom={1} 
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -57,7 +59,7 @@ export default function Page() {
 
       {/* Subtítulo */}
       <motion.div
-        custom={2} // Índice del componente
+        custom={2} 
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -68,13 +70,13 @@ export default function Page() {
 
       {/* Grid de proyectos adicionales */}
       <motion.div
-        custom={3} // Índice del componente
+        custom={3} 
         initial="hidden"
         animate="visible"
         variants={containerVariants}
         className="w-full"
       >
-        <ProjectsGrid projects={workingProjects} />
+        <WorkingProjectsGrid projects={workingProjects} />
       </motion.div>
     </div>
   );

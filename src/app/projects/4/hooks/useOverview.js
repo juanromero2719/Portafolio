@@ -1,11 +1,11 @@
 export const useOverview = () => {
-    const overviewData = {
+  const overviewData = {
       title: "Resumen",
-      text: "Como parte del curso Tecnologías avanzadas el cual tiene como proposito aprender y poner práctica principios SOLID y GRASP,   \
-      realizamos una serie de laboratorios los cuales tenian como fin realizar un aplicativo que aplicara los pilares básicos de la programación orientada a objetos, principios SOLID, GRASP \
-      y diferentes patrones de diseño y comportamiento.  " 
-    };
-  
-    return { overviewData };
+      text: "Como parte del curso de Tecnologías Avanzadas, cuyo propósito es aprender y aplicar los principios SOLID y GRASP, \
+      llevamos a cabo una serie de laboratorios enfocados en el desarrollo de un aplicativo. A través de estos ejercicios, \
+      implementamos los pilares fundamentales de la programación orientada a objetos, así como distintos principios de diseño, \
+      patrones de comportamiento y buenas prácticas en el desarrollo de software."
   };
-  
+
+  return { overviewData };
+};

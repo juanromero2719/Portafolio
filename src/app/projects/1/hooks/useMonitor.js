@@ -1,9 +1,9 @@
 export const useMonitor = () => {
-    const monitor = {
-      title: "",
-      text: "Segunda aplicación web la cual permite registrar usuarios y visualizar videos y registros capturados de la sesiones remotas de la primera aplicación. \n\n Esta conectada con servicios en la nube como Google Cloud Storage tanto para SQL para manejar regitros, como para un Bucket para almacenar videos.", 
-    };
-  
-    return { monitor };
+  const monitor = {
+      title: "Monitorización y Visualización",
+      text: "Segunda aplicación web que permite registrar usuarios y visualizar los videos y registros capturados de las sesiones remotas de la primera aplicación. \
+      \n\nEstá conectada con servicios en la nube como Google Cloud Storage, utilizando SQL para la gestión de registros y un bucket para el almacenamiento de videos."
   };
-  
+
+  return { monitor };
+};

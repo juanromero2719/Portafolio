@@ -1,11 +1,10 @@
 export const useDatabaseOverview = () => {
-    const databaseOverview = {
+  const databaseOverview = {
       title: "",
-      text: "Este proyecto emplea una base de datos embebida en Sqlite3 con el fin de perdurar la partida en el caso de una posible desconexión repentina. \
-      Esta base de datos esta hecha en sql y cuenta con dos tablas, una para manejar los jugadores y la cantidad de cambios que han hecho en la partida y  \
-      otra para tener un control de que cartas que tienen dichos jugadores. Las peticiones realizadas a esta base de datos se realizan a través del orm de django " 
-    };
-  
-    return { databaseOverview };
+      text: "Este proyecto utiliza una base de datos embebida en SQLite3 para garantizar la persistencia de la partida en caso de una desconexión repentina. \
+      La base de datos, diseñada en SQL, cuenta con dos tablas: una para gestionar los jugadores y la cantidad de cambios realizados en la partida, \
+      y otra para llevar un control de las cartas asignadas a cada jugador. Las consultas a la base de datos se realizan a través del ORM de Django."
   };
-  
+
+  return { databaseOverview };
+};

@@ -1,14 +1,12 @@
 export const useOverview = () => {
-    const overviewData = {
+  const overviewData = {
       title: "Resumen",
-      text: "Los anteriores requerimientos fueron expuestos al comienzo del sprint para dar la base con la cual se empezo a diseñar las dos aplicaciones necesarias para llevar a cabo el proyecto. \
-      La primera aplicación consiste de un monolito el cual permite el registro de usuarios necesario para almacenar la informacion de las actividades realizadas durante\
-      cada sesión. Este realiza peticiones a un bucket que se encuentra en GCP (Google Cloud Platform) para asi mostrar al usuario videos y registros, ademas de dar la opción de descargar un reporte en formato PDF. \
-      La segunda aplicación es una aplicación de consola que simula una máquina remota, esta aplicación fue construida en Java y se encarga de simular el funcionamiento de una máquina remota usando hilos y grabando el monitor, \
-      al finalizar la sesión sube la información al bucket desde el lado del servidor. \
-      ", 
-    };
-  
-    return { overviewData };
+      text: "Los requerimientos iniciales fueron presentados al comienzo del sprint para establecer la base del diseño de las dos aplicaciones necesarias para el proyecto. \
+      La primera aplicación es un monolito que permite el registro de usuarios, almacenando la información sobre las actividades realizadas en cada sesión. \
+      Este sistema realiza peticiones a un bucket en Google Cloud Platform (GCP) para mostrar videos y registros a los usuarios, además de ofrecer la opción de descargar un reporte en formato PDF. \
+      \n\nLa segunda aplicación es una consola desarrollada en Java que simula una máquina remota. Esta aplicación utiliza hilos para replicar el funcionamiento de una máquina real y grabar el monitor durante la sesión. \
+      Al finalizar, la información se sube automáticamente al bucket desde el servidor."
   };
-  
+
+  return { overviewData };
+};

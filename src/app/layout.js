@@ -22,6 +22,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+
+      <head>
+        <meta charSet="UTF-8" />
+        <title>Portafolio</title>
+        <link rel="icon" href="/images/favicon.png" />
+      </head>
+
       <body className="min-h-screen bg-gradient-animated bg-[length:400%_400%] animate-gradient-move">
         <NavBar onContactClick={handleContactClick} />
         <main className="flex-grow">{children}</main>

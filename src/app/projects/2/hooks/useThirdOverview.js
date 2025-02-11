@@ -1,12 +1,10 @@
 export const useThirdOverview = () => {
-    const ThirOverview = {
+  const ThirOverview = {
       title: "",
-      text: "El front-end lo trabajamos con React con el framework de next.js, buscamos realizar una plataforma intuitiva y minimalista responsive \
-      ademas de implementar un panel de control para mantener un control sobre los usuarios dentro de la plataforma. Las solicitudes que realiza este sistema utilizan la libreria \
-      de axios la cual lleva el token en su encabezado. \
-      ", 
-    };
-  
-    return { ThirOverview };
+      text: "El frontend fue desarrollado con React y el framework Next.js, priorizando una interfaz intuitiva, minimalista y completamente responsive. \
+      Además, implementamos un panel de control para gestionar a los usuarios dentro de la plataforma. \
+      Las solicitudes al backend se realizaron utilizando la librería Axios, incluyendo un token en los encabezados para la autenticación."
   };
-  
+
+  return { ThirOverview };
+};
