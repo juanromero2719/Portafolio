@@ -17,11 +17,10 @@ import { useDetails } from "./hooks/useDetails";
 import { useImage } from "./hooks/useImage";
 import { useOverview } from "./hooks/useOverview";
 import { useGithub } from "./hooks/useGithub";
-import { useIntroduction } from "./hooks/useIntroduction";
-import { useSecondOverview } from "./hooks/useSecondOverview";
 import { useCarousel } from "./hooks/useCarousel";	
-import { useSecondCarousel } from "./hooks/useSecondCarousel";
-import { useThirdOverview } from "./hooks/useThirdOverview";
+import { useFileCarousel } from "./hooks/useFileCarousel";
+import { useFileOverview } from "./hooks/useFileOverview";
+import { useViewOverview } from "./hooks/useViewOverview";
 
 export default function Page() {
 
@@ -43,18 +42,16 @@ export default function Page() {
     const { image } = useImage();
     const { overviewData } = useOverview();
     const { githubInfo } = useGithub();
-    const { introduction } = useIntroduction();
-    const { secondOverview } = useSecondOverview();	
-    const { carousel } = useCarousel();
-    const { secondCarousel } = useSecondCarousel();
-    const { ThirOverview } = useThirdOverview();
-    
+    const { carousel } = useCarousel(); 
+    const { fileCarousel } = useFileCarousel();
+    const { fileOverview } = useFileOverview();
+    const { viewOverview } = useViewOverview();
 
     return (
 
         <>
 
-            <motion.div
+             <motion.div
                 custom={0} 
                 initial="hidden"
                 animate="visible"
@@ -74,7 +71,7 @@ export default function Page() {
                 <Details timeline={timeline} team={team} role={role} />
             </motion.div>
 
-            <motion.div
+               <motion.div
                 custom={2} 
                 initial="hidden"
                 animate="visible"
@@ -95,27 +92,17 @@ export default function Page() {
             </motion.div>
 
             <motion.div
-                    custom={4} 
-                    initial="hidden"
-                    animate="visible"
-                    variants={containerVariants}
-                    className="w-full"
-            >
-                <Github text={githubInfo.text} icon={githubInfo.icon} href={githubInfo.href} />
-            </motion.div>
-
-            <motion.div
-                custom={5} 
+                custom={4} 
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
                 className="w-full"
             >
-                <OverviewCard title={introduction.title} text={introduction.text} />
+                <Github text={githubInfo.text} icon={githubInfo.icon} href={githubInfo.href} />
             </motion.div>
 
             <motion.div
-                custom={6} // Índice del componente
+                custom={5} // Índice del componente
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
@@ -127,35 +114,35 @@ export default function Page() {
             </motion.div>
 
             <motion.div
-                custom={7} 
+                custom={6} 
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
                 className="w-full"
             >
-                <OverviewCard title={secondOverview.title} text={secondOverview.text} />
+                <OverviewCard title={viewOverview.title} text={viewOverview.text} />
             </motion.div>
 
             <motion.div
-                custom={8} // Índice del componente
+                custom={7} // Índice del componente
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
                 className="w-full"
             >
                 <div className="p-4">
-                      <Carousel images={secondCarousel} />
+                      <Carousel images={fileCarousel} />
                 </div>
             </motion.div>
 
             <motion.div
-                custom={9} 
+                custom={8} 
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
                 className="w-full"
             >
-                <OverviewCard title={ThirOverview.title} text={ThirOverview.text} />
+                <OverviewCard title={fileOverview.title} text={fileOverview.text} />
             </motion.div>
       
         </>
