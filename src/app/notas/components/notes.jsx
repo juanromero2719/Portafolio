@@ -37,12 +37,14 @@ export default function Notes({ notes }) {
           onClick={() => handleOpenPopup(note)}
         >
           <div className="flex-grow">
-            <h2 className="text-lg font-semibold text-[#025A4E] mb-1 font-Acorn"
+            <h2 className="text-lg font-semibold text-[#025A4E] mb-1 font-Acorn
+            dark:text-[#8fdcc2]"
               style={{ fontSize: "clamp(16px, 1vw, 20px)" }}>
               {note.title}
             </h2>
 
-            <p className="text-sm text-gray-700 font-RegularAcorn"
+            <p className="text-sm text-gray-700 font-RegularAcorn
+            dark:text-[#d4ede4]"
               style={{ fontSize: "clamp(16px, 1vw, 18px)" }}>
               {note.description}
             </p>
