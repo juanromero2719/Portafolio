@@ -5,19 +5,19 @@ export default function Steps({ steps }) {
         md:mx-5
         lg:space-y-[4vw]">
         {steps.map((step) => (
-          <div key={step.id} className="flex items-start space-x-4"
+          <div key={step.id} className="flex items-start space-x-4 "
          >
             {/* Número del paso */}
-            <div className="text-2xl font-bold text-[#7AA599] font-Acorn my-auto"
+            <div className="text-2xl font-bold text-[#7AA599] dark:text-[#598E7D] font-Acorn my-auto"
             style={{ fontSize: "clamp(24px, calc(0.7rem + 1vw), 45px)" }}>{`0${step.id}`}</div>
   
             {/* Contenido del paso */}
             <div>
             
-              <h2 className="text-xl font-semibold text-[#025A4E] mb-2 font-Acorn"
+              <h2 className="text-xl font-semibold text-[#025A4E] dark:text-[#8fdcc2] mb-2 font-Acorn"
               style={{ fontSize: "clamp(22px, calc(0.7rem + 1vw), 32px)" }}>{step.title}</h2>
    
-              <p className="text-[#344943]  leading-relaxed font-RegularAcorn"
+              <p className="text-[#344943] dark:text-[#d4ede4] leading-relaxed font-RegularAcorn"
               style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 22px)" }}>{step.description}</p>
             </div>
           </div>

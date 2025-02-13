@@ -5,7 +5,8 @@ export default function Title({ title, subtitle }) {
     <div className="flex flex-col items-center justify-center space-y-6 my-[48px]
     md:mt-[116px]">
       {/* Título */}
-      <h1 className="font-Acorn text-center leading-tight tracking-[-2px] text-[#025A4E]"
+      <h1 className="font-Acorn text-center leading-tight tracking-[-2px] text-[#025A4E]
+      dark:text-[#8fdcc2]"
       style={{ fontSize: "clamp(40px, 8.5vw, 150px)" }}>
         {title}
       </h1>

@@ -109,12 +109,13 @@ export default function ChatBot({ isOpen, onClose }) {
       {/* Contenedor del chatbot */}
       <div
         className="
-          bg-[#F2EEE5] w-full h-full shadow-lg flex flex-col
+          bg-[#F2EEE5] dark:bg-[#2c4434] w-full h-full shadow-lg flex flex-col
           md:mb-4 md:mr-4 md:max-w-[350px] md:h-[526px] md:rounded-lg 
         "
       >
         {/* Encabezado */}
         <div className="bg-[#025A4E] text-white py-3 pr-6 pl-4 flex justify-between items-center
+          dark:bg-[#8fdcc2] dark:text-[#025A4E]  
           md:rounded-t-lg">
           <div className="flex items-center space-x-4">
             <img
@@ -129,14 +130,15 @@ export default function ChatBot({ isOpen, onClose }) {
           </div>
           <button
             onClick={onClose}
-            className="text-white font-bold text-lg hover:text-gray-300 transition"
+            className="text-white font-bold text-lg hover:text-gray-300 transition dark:text-[#025A4E]"
           >
             ✕
           </button>
         </div>
 
         {/* Ventana de mensajes + Opciones */}
-        <div className="flex-grow p-4 space-y-4 overflow-y-auto md:h-[400px]">
+        <div className="flex-grow p-4 space-y-4 overflow-y-auto md:h-[400px] 
+        dark:border border-[#8fdcc2] dark:bg-custom-dark">
           {/* Lista de mensajes */}
           {messages.map((message, index) => (
             <div
@@ -171,7 +173,8 @@ export default function ChatBot({ isOpen, onClose }) {
                 <button
                   key={option.id}
                   onClick={() => handleOptionClick(option)}
-                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E] hover:bg-[#F3F6F4] transition"
+                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E] hover:bg-[#F3F6F4] transition
+                  dark:text-[#8fdcc2] dark:border-[#8fdcc2]"  
                 >
                   {option.label}
                 </button>
@@ -186,7 +189,8 @@ export default function ChatBot({ isOpen, onClose }) {
                 <button
                   key={option.id}
                   onClick={() => handleSecondaryOptionClick(option)}
-                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E] hover:bg-[#F3F6F4] transition"
+                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E]  hover:bg-[#F3F6F4] transition
+                  dark:border-[#8fdcc2] dark:text-[#8fdcc2]"
                 >
                   {option.label}
                 </button>

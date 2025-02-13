@@ -24,13 +24,13 @@ export default function Experience({ experiences }) {
       <div
         key={exp.id}
         style={style}
-        className="bg-[#025A4E] text-white p-4 rounded-full shadow-md flex justify-between items-center my-4"
+        className="bg-[#025A4E] dark:bg-[#8fdcc2] text-white p-4 rounded-full shadow-md flex justify-between items-center my-4"
       >
         <div className="mx-4">
-          <h2 className="text-lg font-bold font-Acorn">{exp.company}</h2>
-          <p className="text-sm text-[#b7e9df] font-RegularAcorn">{exp.role}</p>
+          <h2 className="text-lg font-bold font-Acorn dark:text-[#233831]">{exp.company}</h2>
+          <p className="text-sm text-[#b7e9df] dark:text-[#233831]  font-RegularAcorn">{exp.role}</p>
         </div>
-        <span className="mx-4 text-lg font-semibold font-Acorn">{exp.years}</span>
+        <span className="mx-4 text-lg font-semibold font-Acorn dark:text-[#233831]">{exp.years}</span>
       </div>
     );
   });
@@ -50,13 +50,13 @@ export default function Experience({ experiences }) {
           {experiences.map(exp => (
             <div
               key={exp.id}
-              className="flex justify-between items-center bg-[#025A4E] text-white p-4 rounded-full shadow-md"
+              className="flex justify-between items-center bg-[#025A4E]  dark:bg-[#8fdcc2] text-white p-4 rounded-full shadow-md"
             >
               <div className="mx-4">
-                <h2 className="text-lg font-bold font-Acorn">{exp.company}</h2>
-                <p className="text-sm text-[#b7e9df] font-RegularAcorn">{exp.role}</p>
+                <h2 className="text-lg font-bold font-Acorn dark:text-[#233831]">{exp.company}</h2>
+                <p className="text-sm text-[#b7e9df] font-RegularAcorn dark:text-[#233831]">{exp.role}</p>
               </div>
-              <span className="mx-4 text-lg font-semibold font-Acorn">{exp.years}</span>
+              <span className="mx-4 text-lg font-semibold font-Acorn dark:text-[#233831]">{exp.years}</span>
             </div>
           ))}
         </div>

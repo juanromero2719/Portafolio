@@ -19,7 +19,7 @@ export default function Footer() {
           
           {/* Elsewhere Section */}
           <div>
-            <h3 className="text-lg font-semibold text-[#025A4E] mb-4 font-Acorn">Redes</h3>
+            <h3 className="text-lg font-semibold text-[#025A4E] dark:text-[#8fdcc2] mb-4 font-Acorn">Redes</h3>
             <ul className="space-y-2">
               {elsewhereLinks.map((link) => (
                 <li key={link.name}>
@@ -28,7 +28,7 @@ export default function Footer() {
                     target={link.name === 'CV' ? '_self' : '_blank'}
                     rel={link.name === 'CV' ? undefined : 'noopener noreferrer'}
                     download={link.name === 'CV' ? true : undefined} 
-                    className="text-sm text-[#546d69] hover:text-[#025A4E] transition font-ThinAcorn font-bold"
+                    className="text-sm text-[#546d69] dark:text-[#d4ede4] hover:text-[#025A4E] transition font-ThinAcorn font-bold"
                   >
                     {link.name}
                   </a>
@@ -39,13 +39,13 @@ export default function Footer() {
   
           {/* Contact Section */}
           <div>
-            <h3 className="text-lg text-[#025A4E] mb-4 font-Acorn">Contacto</h3>
+            <h3 className="text-lg text-[#025A4E] dark:text-[#8fdcc2] mb-4 font-Acorn">Contacto</h3>
             <ul className="space-y-2">
               {contactLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-sm text-[#546d69] hover:text-[#025A4E] transition font-ThinAcorn font-bold"
+                    className="text-sm text-[#546d69] dark:text-[#d4ede4] hover:text-[#025A4E] transition font-ThinAcorn font-bold"
                   >
                     {link.name}
                   </a>

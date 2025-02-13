@@ -10,12 +10,12 @@ export default function Details({ timeline, team, role }) {
       {/* Timeline */}
       <div className="md:flex md:flex-col md:items-start">
 
-        <h3 className="font-Acorn  font-semibold text-gray-600"
+        <h3 className="font-Acorn  font-semibold text-gray-600 dark:text-[#d4ede4]"
         style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 24px)" }}>
           Duración
         </h3>
 
-        <p className="font-LightAcorn text-lg font-medium text-[#025A4E]"
+        <p className="font-LightAcorn text-lg font-medium text-[#025A4E] dark:text-[#8fdcc2]"
         style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 24px)" }}>
           {timeline}
         </p>
@@ -26,12 +26,12 @@ export default function Details({ timeline, team, role }) {
       <div className="md:flex md:flex-col md:items-start">
 
         <h3 className="text-lg font-Acorn font-semibold text-gray-600
-        md:mr-2 "
+        md:mr-2 dark:text-[#d4ede4]"
         style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 24px)" }}>
           Equipo
         </h3>
         
-        <div className="flex space-x-2 mt-2 md:mt-0">
+        <div className="flex space-x-2 mt-2 md:mt-0 ">
           {team.map((member) => (
             <img
               key={member.id}
@@ -47,10 +47,10 @@ export default function Details({ timeline, team, role }) {
       {/* Role */}
       <div className="md:flex md:flex-col md:items-start">
 
-        <h3 className="text-lg font-Acorn font-semibold text-gray-600"
+        <h3 className="text-lg font-Acorn font-semibold text-gray-600 dark:text-[#d4ede4] "
         style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 24px)" }}>Rol</h3>
 
-        <p className="font-LightAcorn text-lg font-medium text-[#025A4E] whitespace-pre-line"
+        <p className="font-LightAcorn text-lg font-medium text-[#025A4E] whitespace-pre-line dark:text-[#8fdcc2]"
         style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 24px)" }}>
           {role}
         </p>
