@@ -43,7 +43,7 @@ export default function Notes({ notes }) {
               {note.title}
             </h2>
 
-            <p className="text-sm text-gray-700 font-RegularAcorn
+            <p className="text-sm text-gray-700 font-Gt                   
             dark:text-[#d4ede4]"
               style={{ fontSize: "clamp(16px, 1vw, 18px)" }}>
               {note.description}
@@ -60,7 +60,7 @@ export default function Notes({ notes }) {
       {isOpen && selectedNote && (
         <div className="fixed inset-0 flex items-end justify-center z-50
         md:items-end md:pb-5">
-          <div className="w-full h-[85%] overflow-y-auto bg-[#ffffffe7] rounded-t-3xl shadow-lg p-6 transform transition-all duration-300 translate-y-full
+          <div className="w-full h-[85%] overflow-y-auto bg-[#ffffff41] backdrop-blur-md rounded-t-3xl shadow-lg p-6 transform transition-all duration-300 translate-y-full
             sm:mx-8
             md:rounded-3xl md:h-[90%]
             2xl:mx-[10%]"

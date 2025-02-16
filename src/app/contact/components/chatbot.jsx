@@ -2,12 +2,6 @@
 
 import { useState } from "react";
 
-/**
- * ChatBot
- * Aparece con una animación desde abajo hacia arriba,
- * manteniéndose en el DOM para que la transición sea fluida.
- */
-
 export default function ChatBot({ isOpen, onClose }) {
   // Estados internos
   const [messages, setMessages] = useState([
@@ -95,22 +89,26 @@ export default function ChatBot({ isOpen, onClose }) {
    * siempre en el DOM. Controlamos visibilidad y clics con clases Tailwind.
    */
   return (
+
     <div
       className={`
-        fixed inset-0 z-50 flex md:items-end md:justify-end
-        transition-all duration-300 transform
+        fixed inset-0 z-50 flex  transition-all duration-300 transform
+        md:items-end md:justify-end
+
         ${
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-full pointer-events-none"
         }
+
       `}
     >
       {/* Contenedor del chatbot */}
+      
       <div
         className="
           bg-[#F2EEE5] dark:bg-[#2c4434] w-full h-full shadow-lg flex flex-col
-          md:mb-4 md:mr-4 md:max-w-[350px] md:h-[526px] md:rounded-lg 
+          md:mb-4 md:mr-4 md:max-w-[350px] md:h-[526px] md:rounded-lg  
         "
       >
         {/* Encabezado */}
@@ -138,7 +136,8 @@ export default function ChatBot({ isOpen, onClose }) {
 
         {/* Ventana de mensajes + Opciones */}
         <div className="flex-grow p-4 space-y-4 overflow-y-auto md:h-[400px] 
-        dark:border border-[#8fdcc2] dark:bg-custom-dark">
+        dark:border border-[#8fdcc2] 
+        dark:bg-transparent">
           {/* Lista de mensajes */}
           {messages.map((message, index) => (
             <div
@@ -148,8 +147,8 @@ export default function ChatBot({ isOpen, onClose }) {
               <div
                 className={`inline-block p-3 rounded-lg ${
                   message.type === "bot"
-                    ? "bg-[#FFFFFF] text-[#025A4E] font-RegularAcorn"
-                    : "bg-[#D4EDE4] text-[#025A4E]"
+                    ? "bg-[#FFFFFF] text-[#025A4E] font-RegularAcorn dark:bg-[#d4ede428] dark:text-[#D4EDE4]"
+                    : "bg-[#D4EDE4] text-[#025A4E] dark:bg-[#025a4e67] dark:text-[#D4EDE4] font-RegularAcorn "
                 }`}
               >
                 {message.text}
@@ -160,7 +159,8 @@ export default function ChatBot({ isOpen, onClose }) {
           {/* Indicador de "escribiendo" */}
           {isTyping && (
             <div className="text-left">
-              <div className="inline-block p-3 rounded-lg bg-[#FFFFFF] text-[#025A4E] font-RegularAcorn">
+              <div className="inline-block p-3 rounded-lg bg-[#FFFFFF] text-[#025A4E] font-RegularAcorn 
+              dark:bg-[#d4ede428] dark:text-[#D4EDE4]">
                 Escribiendo...
               </div>
             </div>
@@ -173,8 +173,9 @@ export default function ChatBot({ isOpen, onClose }) {
                 <button
                   key={option.id}
                   onClick={() => handleOptionClick(option)}
-                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E] hover:bg-[#F3F6F4] transition
-                  dark:text-[#8fdcc2] dark:border-[#8fdcc2]"  
+                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E]  transition
+                  dark:text-[#8fdcc2] dark:border-[#8fdcc2] 
+                  "  
                 >
                   {option.label}
                 </button>
@@ -189,8 +190,8 @@ export default function ChatBot({ isOpen, onClose }) {
                 <button
                   key={option.id}
                   onClick={() => handleSecondaryOptionClick(option)}
-                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E]  hover:bg-[#F3F6F4] transition
-                  dark:border-[#8fdcc2] dark:text-[#8fdcc2]"
+                  className="w-auto text-left p-3 border rounded-3xl text-[#025A4E] border-[#025A4E]  transition
+                  dark:border-[#8fdcc2] dark:text-[#8fdcc2] "
                 >
                   {option.label}
                 </button>

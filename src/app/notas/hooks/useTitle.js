@@ -1,8 +1,8 @@
 export const useTitleAndDescription = () => {
     const titleAndDescription = {
-      title: "Notas.",
+      title: "Tecnologías.",
       description:
-        "Estas son algunas notas de mi estudio independiente sobre algunas tecnologías y herramientas que he aprendido.",
+        "En este módulo encontraras el stack tecnológico que he manejado y como lo he implementado a diversos proyectos 😊.",
     };
   
     return titleAndDescription;

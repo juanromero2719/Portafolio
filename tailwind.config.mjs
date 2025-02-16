@@ -20,7 +20,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'gradient-animated': 'linear-gradient(270deg, #FFCDD2, #C8E6C9, #FFF9C4)',
+        'gradient-animated': 'linear-gradient(270deg, #FFCDD2, #FFCDD2, #FFF9C4)',
         'gradient-dark': 'linear-gradient(270deg, #243A31, #2F5248, #3B6D4F, #376E32)',
         'custom-dark': 'linear-gradient(var(--color-backdrop), var(--color-backdrop)), #233831',
       },

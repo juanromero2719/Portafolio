@@ -2,30 +2,18 @@ export const useNotes = () => {
   const notes = [
     {
       id: 1,
-      title: 'Github',
+      title: 'Git',
       subtitle: 'Sistema controlador de versiones.',
       description: 'Plataforma para almacenar, compartir y trabajar código.',
-      icon: 'images/github.jpg',
-      image: 'images/githubdesktop.webp',
-      subtitletwo: 'Conceptos',
+      icon: 'images/Stack/Github/github.jpg',
+      image: 'images/Stack/Github/github.png',
+      subtitletwo: 'Implementación',
       fullDescription: `
-        - Repositorio: Contenedor lógico que almacena el código base.\n 
-        - Commit: Representa un cambio de datos en el repositorio local. \n 
-        - Tree: Representa la historia del repositorio. \n 
-        - Remote: Versión del proyecto alojada en algún servidor remoto. \n 
-        - Branches: Ramas de desarrollo que permiten cambios aislados. \n 
-        - Main: Rama predeterminada en la mayoría de los repositorios. \n 
-        - Clone: Crea una copia local del repositorio, incluyendo la historia. \n 
-        - Checkout: Cambia entre diferentes ramas o commits del repositorio. \n 
-        - Pull: Descarga cambios de un repositorio remoto y los aplica a tu rama local. \n 
-        - Push: Sube los cambios de tu repositorio local a un repositorio remoto. \n 
-        - Fetch: Descarga información del repositorio remoto sin integrarla a tu código local. \n 
-        - Reset: Deshace cambios locales con opciones para revertir la preparación o confirmación. \n 
-        - Merge: Combina múltiples commits en uno solo. \n 
-        - Staging files: Prepara y organiza los cambios para un commit. \n 
-        - Add: Agrega cambios al área de preparación para el siguiente commit. \n 
+        Github ha sido el hogar de mis proyectos personales y laborales desde mi etapa universitaria.\n 
+        Junto a el he buscado siempre mantener un almacenamiento en la nube que me permita acceder a mis proyectos desde cualquier punto y cualquier dispostivo. \n Ademas ha sido una plataforma valiosa al momento de trabajar en equipo gracias a la posibilidad de crear ramas desde diferentes puntos del repositorio me ha permito llevar un control de los cambios y mejoras en los proyectos en los que he participado. \n
+         
       `,
-      subtitlethree: 'Comandos',
+      subtitlethree: 'Proyectos',
       fullDescriptionthree: `
         - git init → Inicializa un nuevo repositorio Git en el directorio actual. \n 
         - git clone <url> → Clona un repositorio remoto en tu máquina local. \n 
