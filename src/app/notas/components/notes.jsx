@@ -96,7 +96,7 @@ export default function Notes({ notes }) {
             xl:mx-[15%]
             2xl:mx-[23%]">
 
-              {/* CONCEPTOS CLAVE */}
+              {/* IMPLEMENTACIÓN */}
               <p className="text-[#025A4E] leading-relaxed font-Acorn mb-4 mt-8"
                 style={{ fontSize: "clamp(24px, calc(1rem + 1.5vw), 45px)" }}>
                 {selectedNote.subtitletwo}
@@ -112,11 +112,22 @@ export default function Notes({ notes }) {
                   )}
               </div>
 
-              {/* COMANDOS */}
+              {/* PROYECTOS */}
               <p className="text-[#025A4E] leading-relaxed font-Acorn mb-4 mt-8"
                 style={{ fontSize: "clamp(24px, calc(1rem + 1.5vw), 45px)" }}>
                 {selectedNote.subtitlethree}
               </p>
+
+             
+
+              {selectedNote.imageTwo && (
+                <div className="my-6">
+                  <img src={selectedNote.imageTwo} alt={`${selectedNote.title} - detalle 1`} className="rounded-lg mb-6 object-cover mx-auto w-full
+                    lg:w-[90%]
+                    xl:w-[80%]
+                    2xl:w-[60%]" />
+                </div>
+              )}
 
               <div className="text-gray-600 leading-relaxed font-Gt"
                 style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
@@ -127,6 +138,27 @@ export default function Notes({ notes }) {
                     line ? <p key={index} className="mb-2">{line}</p> : <br key={index} />
                   )}
               </div>
+
+              {selectedNote.imageThrre && (
+                <div className="my-6">
+                  <img src={selectedNote.imageThrre} alt={`${selectedNote.title} - detalle 2`} className="rounded-lg mb-6 object-cover mx-auto w-full
+                    lg:w-[90%]
+                    xl:w-[80%]
+                    2xl:w-[60%]" />
+                </div>
+              )}
+
+              {selectedNote.fullDescriptionFour && (
+                <div className="text-gray-600 leading-relaxed font-Gt"
+                  style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
+                  {selectedNote.fullDescriptionFour
+                    ?.trim()
+                    .split("\n")
+                    .map((line, index) =>
+                      line ? <p key={index} className="mb-2">{line}</p> : <br key={index} />
+                    )}
+                </div>
+              )}
 
             </div>
           </div>
