@@ -92,22 +92,43 @@ export const useNotes = () => {
       id: 6,
       title: 'C ++',
       subtitle: 'Eficiente, flexible, potente, veloz.',
-      description: 'Lenguaje de programación rápido, eficiente, orientado a objetos y multiplataforma.',
+      description: 'Un lenguaje de programación rápido, eficiente, orientado a objetos y multiplataforma.',
       icon: 'images/Stack/C++/logo.jpg',
-      image: 'images/Stack/Django/geducar.png',
+      image: 'images/Stack/C++/clienteServidor.png',
       subtitletwo: 'Implementación',
       fullDescription: `
-        Django fue el primer framework que aprendí debido a su facilidad para crear aplicaciones monolíticas, convirtiéndose en un aliado fundamental en mis proyectos universitarios. Su curva de aprendizaje es notablemente sencilla y su integración con diversas librerías de Python lo hace invaluable para desarrollar aplicaciones complejas.
-        Gracias a Django, obtuve mi primer trabajo como desarrollador, donde implementé un módulo de encuestas en una plataforma de gestión de eventos para la Universidad de los Llanos.
+        C++ fue el primer lenguaje que aprendí durante mis estudios universitarios, y con él desarrollamos diversas aplicaciones Cliente-Servidor. Estas aplicaciones permitían la interacción entre dos máquinas dentro de una misma red local a través de la consola de comandos (CLI). Durante el proceso, trabajamos con herramientas propias del sistema operativo, como la gestión de hilos y procesos, lo que nos permitió comprender el funcionamiento interno de las aplicaciones y cómo se comunican a nivel de red y recursos del sistema. Esta experiencia me brindó una comprensión sólida de cómo los programas pueden interactuar de manera eficiente y segura en entornos distribuidos.
       `,
       subtitlethree: 'Proyectos',
-      imageTwo: 'images/Stack/Django/pytest.png',
+      imageTwo: 'images/Stack/C++/filosofos.png',
       fullDescriptionthree: `
-        En una aplicación para la gestión de procesos judiciales, utilicé la librería pytest-django para realizar pruebas funcionales, lo que me permitió tener una visión clara de los procesos implementados con Selenium y automatizar pruebas para asegurar el correcto funcionamiento de todos los subsistemas.
+        Uno de los proyectos más complejos que desarrollé al principio de mi carrera fue la simulación no gráfica del famoso problema de la "Cena de los Filósofos". En este proyecto, utilicé listas circulares doblemente enlazadas para representar tanto a los filósofos como a los palillos en la mesa. La simulación permitía mostrar, segundo a segundo, el estado de cada filósofo, ya fuera comiendo o pensando, y a medida que la simulación avanzaba, los filósofos iban dejando de comer hasta que todos alcanzaban el estado de "satisfacción". Este proyecto me permitió profundizar en la gestión de recursos compartidos y la sincronización de procesos, conceptos fundamentales en la programación concurrente.
       `,
-      imageThrre: 'images/Stack/Django/documentacion.png',
+      imageThrre: 'images/Stack/C++/forkSemaforo.png',
       fullDescriptionFour: `
-       Al comprender los servicios REST, llevé este conocimiento a Django desarrollando una API REST que simulaba un juego de póker. Permitiendo hasta 6 jugadores por partida, la API gestionaba el registro, inicio de partida, solicitud y cambio de cartas, así como la determinación del ganador. Este sistema se basó en un conjunto de validaciones que garantizaban un flujo ordenado y una lógica clara, cumpliendo estrictamente las reglas del juego.
+        Un aspecto fundamental en mi desarrollo como programador fue aprender a utilizar semáforos y procesos (empleando la función fork) para gestionar sistemas distribuidos y la sincronización de procesos. A través de este aprendizaje, pude entender cómo coordinar múltiples procesos que deben compartir recursos sin provocar condiciones de carrera o bloqueos. Junto con los algoritmos de planificación de procesos, este conocimiento me permitió sentar las bases para el desarrollo de aplicaciones más complejas y robustas, que pueden ejecutar tareas en paralelo de manera eficiente y segura.
+      `
+    },
+
+    {
+      id: 7,
+      title: 'Postman',
+      subtitle: 'Herramienta para probar y desarrollar APIs de manera eficiente.',
+      description: 'Un lenguaje de programación rápido, eficiente, orientado a objetos y multiplataforma.',
+      icon: 'images/Stack/C++/logo.jpg',
+      image: 'images/Stack/C++/clienteServidor.png',
+      subtitletwo: 'Implementación',
+      fullDescription: `
+        C++ fue el primer lenguaje que aprendí durante mis estudios universitarios, y con él desarrollamos diversas aplicaciones Cliente-Servidor. Estas aplicaciones permitían la interacción entre dos máquinas dentro de una misma red local a través de la consola de comandos (CLI). Durante el proceso, trabajamos con herramientas propias del sistema operativo, como la gestión de hilos y procesos, lo que nos permitió comprender el funcionamiento interno de las aplicaciones y cómo se comunican a nivel de red y recursos del sistema. Esta experiencia me brindó una comprensión sólida de cómo los programas pueden interactuar de manera eficiente y segura en entornos distribuidos.
+      `,
+      subtitlethree: 'Proyectos',
+      imageTwo: 'images/Stack/C++/filosofos.png',
+      fullDescriptionthree: `
+        Uno de los proyectos más complejos que desarrollé al principio de mi carrera fue la simulación no gráfica del famoso problema de la "Cena de los Filósofos". En este proyecto, utilicé listas circulares doblemente enlazadas para representar tanto a los filósofos como a los palillos en la mesa. La simulación permitía mostrar, segundo a segundo, el estado de cada filósofo, ya fuera comiendo o pensando, y a medida que la simulación avanzaba, los filósofos iban dejando de comer hasta que todos alcanzaban el estado de "satisfacción". Este proyecto me permitió profundizar en la gestión de recursos compartidos y la sincronización de procesos, conceptos fundamentales en la programación concurrente.
+      `,
+      imageThrre: 'images/Stack/C++/forkSemaforo.png',
+      fullDescriptionFour: `
+        Un aspecto fundamental en mi desarrollo como programador fue aprender a utilizar semáforos y procesos (empleando la función fork) para gestionar sistemas distribuidos y la sincronización de procesos. A través de este aprendizaje, pude entender cómo coordinar múltiples procesos que deben compartir recursos sin provocar condiciones de carrera o bloqueos. Junto con los algoritmos de planificación de procesos, este conocimiento me permitió sentar las bases para el desarrollo de aplicaciones más complejas y robustas, que pueden ejecutar tareas en paralelo de manera eficiente y segura.
       `
     }
 

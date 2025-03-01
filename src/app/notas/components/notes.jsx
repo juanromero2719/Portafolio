@@ -31,7 +31,7 @@ export default function Notes({ notes }) {
       {notes.map((note) => (
         <div
           key={note.id}
-          className="flex items-center bg-translucentWhite p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105
+          className="flex items-center bg-translucentWhite p-4 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105 
             sm:p-6
             md:p-10"
           onClick={() => handleOpenPopup(note)}
@@ -63,7 +63,8 @@ export default function Notes({ notes }) {
           <div className="w-full h-[85%] overflow-y-auto bg-[#ffffff41] backdrop-blur-md rounded-t-3xl shadow-lg p-6 transform transition-all duration-300 translate-y-full
             sm:mx-8
             md:rounded-3xl md:h-[90%]
-            2xl:mx-[10%]"
+            2xl:mx-[10%]
+            dark:bg-[#02360f63]"
             style={{ animation: "slideUp 0.3s ease-in-out forwards" }}>
             
             <div className="sticky top-0 bg-transparent flex justify-end z-10">
@@ -73,14 +74,14 @@ export default function Notes({ notes }) {
               </button>
             </div>
 
-            <h2 className="text-3xl font-semibold text-[#025A4E] mb-4 font-Acorn text-center "
+            <h2 className="text-3xl font-semibold text-[#025A4E] mb-4 font-Acorn text-center dark:text-[#8fdcc2] "
               style={{ fontSize: "clamp(24px, calc(1.5rem + 2vw), 50px)" }}>
               {selectedNote.title}
             </h2>
 
             <div className="flex items-center justify-center mb-6 space-x-6">
               <img className="h-6 w-6 rounded-xl" src="images/sebastianR.jpg" alt="Imagen del autor" />
-              <p className="text-sm text-[#025A4E] font-RegularAcorn text-center leading-tight my-3"
+              <p className="text-sm text-[#025A4E] font-RegularAcorn text-center leading-tight my-3 dark:text-[#d4ede4]"
                 style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
                 {selectedNote.subtitle}
               </p>
@@ -97,12 +98,12 @@ export default function Notes({ notes }) {
             2xl:mx-[23%]">
 
               {/* IMPLEMENTACIÓN */}
-              <p className="text-[#025A4E] leading-relaxed font-Acorn mb-4 mt-8"
+              <p className="text-[#025A4E] leading-relaxed font-Acorn mb-4 mt-8 dark:text-[#8fdcc2]"
                 style={{ fontSize: "clamp(24px, calc(1rem + 1.5vw), 45px)" }}>
                 {selectedNote.subtitletwo}
               </p>
 
-              <div className="text-gray-600 leading-relaxed font-Gt"
+              <div className="text-gray-600 leading-relaxed font-Gt dark:text-[#d4ede4]"
                 style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
                 {selectedNote.fullDescription
                   ?.trim()
@@ -113,7 +114,7 @@ export default function Notes({ notes }) {
               </div>
 
               {/* PROYECTOS */}
-              <p className="text-[#025A4E] leading-relaxed font-Acorn mb-4 mt-8"
+              <p className="text-[#025A4E] leading-relaxed font-Acorn mb-4 mt-8 dark:text-[#8fdcc2]"
                 style={{ fontSize: "clamp(24px, calc(1rem + 1.5vw), 45px)" }}>
                 {selectedNote.subtitlethree}
               </p>
@@ -129,7 +130,7 @@ export default function Notes({ notes }) {
                 </div>
               )}
 
-              <div className="text-gray-600 leading-relaxed font-Gt"
+              <div className="text-gray-600 leading-relaxed font-Gt dark:text-[#d4ede4]"
                 style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
                 {selectedNote.fullDescriptionthree
                   ?.trim()
@@ -149,7 +150,7 @@ export default function Notes({ notes }) {
               )}
 
               {selectedNote.fullDescriptionFour && (
-                <div className="text-gray-600 leading-relaxed font-Gt"
+                <div className="text-gray-600 leading-relaxed font-Gt dark:text-[#d4ede4]"
                   style={{ fontSize: "clamp(16px, calc(0.7rem + 1vw), 21px)" }}>
                   {selectedNote.fullDescriptionFour
                     ?.trim()
