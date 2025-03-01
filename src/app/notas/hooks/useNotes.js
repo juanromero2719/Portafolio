@@ -114,22 +114,26 @@ export const useNotes = () => {
       id: 7,
       title: 'Postman',
       subtitle: 'Herramienta para probar y desarrollar APIs de manera eficiente.',
-      description: 'Un lenguaje de programación rápido, eficiente, orientado a objetos y multiplataforma.',
-      icon: 'images/Stack/C++/logo.jpg',
-      image: 'images/Stack/C++/clienteServidor.png',
+      description: 'Herramienta para probar y desarrollar APIs de manera eficiente.',
+      icon: 'images/Stack/Postman/logo.png',
+      image: 'images/Stack/Postman/postman.png',
       subtitletwo: 'Implementación',
       fullDescription: `
-        C++ fue el primer lenguaje que aprendí durante mis estudios universitarios, y con él desarrollamos diversas aplicaciones Cliente-Servidor. Estas aplicaciones permitían la interacción entre dos máquinas dentro de una misma red local a través de la consola de comandos (CLI). Durante el proceso, trabajamos con herramientas propias del sistema operativo, como la gestión de hilos y procesos, lo que nos permitió comprender el funcionamiento interno de las aplicaciones y cómo se comunican a nivel de red y recursos del sistema. Esta experiencia me brindó una comprensión sólida de cómo los programas pueden interactuar de manera eficiente y segura en entornos distribuidos.
+        He integrado Postman en múltiples proyectos para validar y depurar APIs de manera ágil y confiable. Al crear colecciones y configurar diferentes entornos, pude simular escenarios de pruebas que abarcaran desde el desarrollo local hasta la etapa de producción. Esto me permitió detectar de forma temprana inconsistencias en las respuestas, así como optimizar los endpoints para garantizar un rendimiento adecuado.
       `,
-      subtitlethree: 'Proyectos',
-      imageTwo: 'images/Stack/C++/filosofos.png',
-      fullDescriptionthree: `
-        Uno de los proyectos más complejos que desarrollé al principio de mi carrera fue la simulación no gráfica del famoso problema de la "Cena de los Filósofos". En este proyecto, utilicé listas circulares doblemente enlazadas para representar tanto a los filósofos como a los palillos en la mesa. La simulación permitía mostrar, segundo a segundo, el estado de cada filósofo, ya fuera comiendo o pensando, y a medida que la simulación avanzaba, los filósofos iban dejando de comer hasta que todos alcanzaban el estado de "satisfacción". Este proyecto me permitió profundizar en la gestión de recursos compartidos y la sincronización de procesos, conceptos fundamentales en la programación concurrente.
+    },
+
+    {
+      id: 8,
+      title: 'Express.js',
+      subtitle: 'framework rápido y minimalista para Node.js.',
+      description: 'framework minimalista para crear aplicaciones web en Node.js.',
+      icon: 'images/Stack/Express/logo.png',
+      image: 'images/Stack/Postman/postman.png',
+      subtitletwo: 'Implementación',
+      fullDescription: `
+        He integrado Postman en múltiples proyectos para validar y depurar APIs de manera ágil y confiable. Al crear colecciones y configurar diferentes entornos, pude simular escenarios de pruebas que abarcaran desde el desarrollo local hasta la etapa de producción. Esto me permitió detectar de forma temprana inconsistencias en las respuestas, así como optimizar los endpoints para garantizar un rendimiento adecuado.
       `,
-      imageThrre: 'images/Stack/C++/forkSemaforo.png',
-      fullDescriptionFour: `
-        Un aspecto fundamental en mi desarrollo como programador fue aprender a utilizar semáforos y procesos (empleando la función fork) para gestionar sistemas distribuidos y la sincronización de procesos. A través de este aprendizaje, pude entender cómo coordinar múltiples procesos que deben compartir recursos sin provocar condiciones de carrera o bloqueos. Junto con los algoritmos de planificación de procesos, este conocimiento me permitió sentar las bases para el desarrollo de aplicaciones más complejas y robustas, que pueden ejecutar tareas en paralelo de manera eficiente y segura.
-      `
     }
 
 
