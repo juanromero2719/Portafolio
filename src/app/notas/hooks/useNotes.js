@@ -14,7 +14,7 @@ export const useNotes = () => {
         Además, ha sido una herramienta valiosa para trabajar en equipo gracias a la posibilidad de crear ramas desde diferentes puntos del repositorio, lo que me ha permitido llevar un control detallado de los cambios y mejoras en los proyectos en los que he participado.
       `,
       subtitlethree: 'Proyectos',
-      imageTwo: 'images/Stack/Github/Github.png',
+      imageTwo: 'images/Stack/Github/github.png',
       fullDescriptionthree: `
         GitHub ha sido una de las plataformas que más he utilizado para proyectos personales y académicos. Su gran comunidad ha facilitado la búsqueda de información para resolver problemas dentro de la plataforma. Además, su integración con diversas herramientas externas agiliza muchos procesos, convirtiéndola en una plataforma muy útil.
       `,
@@ -63,7 +63,7 @@ export const useNotes = () => {
       fullDescriptionthree: `
         Markdown ha sido una herramienta valiosa no solo para documentar mis proyectos, sino también para crear READMEs claros y concisos. He utilizado mayormente esta herramienta para crear notas que me sirven como repaso para estudiar de manera independiente.
       `
-    }, 
+    },
 
     {
       id: 4,
