@@ -17,7 +17,7 @@ export const useExperience = () => {
     {
       id: 3,
       company: 'Programador Jr.',
-      role: 'Desarrollador Full-Stack',
+      role: 'Desarrollador Frontend',
       years: '25~',
       años: 3, // Este ocupará más espacio en la grilla
     },
