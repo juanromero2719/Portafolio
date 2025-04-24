@@ -77,12 +77,14 @@ export const useNotes = () => {
       subtitle: 'Lenguaje compilado enfocado en concurrencia y rendimiento.',
       description: 'Lenguaje de programación de Google, eficiente y sencillo para sistemas concurrentes.',
       icon: 'images/Stack/Go/logo.png',
-      image: 'images/Stack/Next/arquitectura.png',
+      image: 'images/Stack/Go/arquitectura.png',
       subtitletwo: 'Implementación',
       fullDescription: `Go ha sido fundamental en proyectos donde la concurrencia, el rendimiento y la simplicidad eran claves. Su sistema de goroutines me ha permitido crear servicios altamente paralelos con bajo consumo de recursos.`,
       subtitlethree: 'Proyectos',
-      imageTwo: 'images/Stack/Next/portafolio.png',
-      fullDescriptionthree: `He creado APIs REST usando Gin y validaciones con middlewares personalizados. También he desarrollado microservicios conectados por mensajería usando RabbitMQ y trabajado con PostgreSQL a través de ORMs como GORM, siempre enfocado en mantener un código limpio y mantenible.`
+      imageTwo: 'images/Stack/Go/backend.png',
+      fullDescriptionthree: `He diseñado y desarrollado APIs REST robustas utilizando Gin, implementando validaciones a través de middlewares personalizados que garantizan seguridad y consistencia. 
+Además, he construido modulos desacoplados, integrando PostgreSQL a través del ORM GORM, con un enfoque constante en la calidad, claridad y escalabilidad del código.
+Entre mis proyectos destacados se encuentra una aplicación que combina el poder de los LLMs para el análisis de sentimientos en comentarios sobre películas, integrando un frontend moderno en Next.js, almacenamiento eficiente en buckets y persistencia estructurada en una base de datos SQL.`
     },
     {
       id: 16,
