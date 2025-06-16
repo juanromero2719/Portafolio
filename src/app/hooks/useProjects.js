@@ -18,7 +18,7 @@ export const useProjects = () => {
       id: 3,
       title: 'Cine Conecta - IA',
       subtitle: 'Go ApiRest - Python LLM - React Typescript Next.js',
-      image: '/images/CineConecta/cine.png',
+      image: '/images/cineConecta/cine.png',
       bgColor: 'bg-[#E8B89C]',
     },
     {
