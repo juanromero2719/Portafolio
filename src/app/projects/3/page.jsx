@@ -50,8 +50,7 @@ export default function Page() {
     return (
 
         <>
-
-             <motion.div
+            <motion.div
                 custom={0} 
                 initial="hidden"
                 animate="visible"

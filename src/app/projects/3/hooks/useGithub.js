@@ -4,7 +4,7 @@ export const useGithub = () => {
 
     text: "Link del proyecto en GitHub",
     icon: "/images/githubNOfondo.png", // Ruta del icono
-    href: "https://github.com/juanromero2719/ApiRest-Django-Poker", // Enlace al proyecto
+    href: "https://github.com/juanromero2719/CineConecta", // Enlace al proyecto
   };
 
   return { githubInfo };

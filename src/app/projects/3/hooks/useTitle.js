@@ -1,8 +1,8 @@
 export const useTitle = () => {
 
-    const title = "ApiRest - Poker.";
+    const title = "Cine Conecta - IA";
     const subtitle =
-      "";
+      "Go ApiRest - Python LLM - React Typescript Next.js";
   
     return { title, subtitle };
   };

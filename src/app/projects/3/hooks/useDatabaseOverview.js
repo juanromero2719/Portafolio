@@ -1,9 +1,7 @@
 export const useDatabaseOverview = () => {
   const databaseOverview = {
       title: "",
-      text: "Este proyecto utiliza una base de datos embebida en SQLite3 para garantizar la persistencia de la partida en caso de una desconexión repentina. \
-      La base de datos, diseñada en SQL, cuenta con dos tablas: una para gestionar los jugadores y la cantidad de cambios realizados en la partida, \
-      y otra para llevar un control de las cartas asignadas a cada jugador. Las consultas a la base de datos se realizan a través del ORM de Django."
+      text: "Este microservicio recomienda películas según los gustos del usuario, usando pandas y numpy. A partir de un CSV con géneros, se crea una matriz one-hot. Luego, se construye un perfil de usuario combinando sus calificaciones con los géneros de las películas vistas. Con ese perfil, se calcula la similitud (producto punto) con las películas no vistas. Las más afines se devuelven como recomendación. En la imagen se observa cómo varían las recomendaciones según las películas valoradas, destacando afinidades como Furiosa o Inception.npm run"
   };
 
   return { databaseOverview };

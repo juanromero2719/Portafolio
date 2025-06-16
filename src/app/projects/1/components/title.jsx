@@ -13,7 +13,7 @@ export default function Title({ title, subtitle }) {
 
       {/* Subtítulo (opcional) */}
       {subtitle && (
-        <h4 className="font-Acorn text-center text-lg sm:text-xl text-[#025A4E] max-w-lg mx-10">
+        <h4 className="font-Acorn text-center text-lg sm:text-xl text-[#025A4E] max-w-lg mx-10 dark:text-[#8fdcc2]">
           {subtitle}
         </h4>
       )}

@@ -3,7 +3,7 @@ export const useProjects = () => {
     {
       id: 1,
       title: 'Remote Desktop',
-      subtitle: 'Java Springboot',
+      subtitle: 'Java Springboot - Patrones de diseño',
       image: '/images/remoteDesktop/remoteDesktop.png',
       bgColor: 'bg-[#D094E5]',
     },
@@ -16,9 +16,9 @@ export const useProjects = () => {
     },
     {
       id: 3,
-      title: 'ApiRest - Poker',
-      subtitle: 'DjangoRest Framework',
-      image: '/images/Poker/poker.png',
+      title: 'Cine Conecta - IA',
+      subtitle: 'Go ApiRest - Python LLM - React Typescript Next.js',
+      image: '/images/CineConecta/cine.png',
       bgColor: 'bg-[#E8B89C]',
     },
     {
